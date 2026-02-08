@@ -1,0 +1,61 @@
+/* Import Hardware styles as base */
+@import url("../../Hardware/css/styles.css");
+
+/* Construction Specific Overrides */
+
+/* Theme Colors - Differentiate from Hardware's yellow/black */
+:root {
+    --construction-primary: #ff5e00; /* Orange for Construction */
+    --construction-dark: #1a1a1a;
+}
+
+header.masthead {
+    /* Override background image for Construction */
+    background-image: url("../assets/img/construction-bg.jpg"); 
+    /* Fallback color if image missing */
+    background-color: #2c3e50; 
+}
+
+.text-primary {
+    color: var(--construction-primary) !important;
+}
+
+a.text-primary:hover, a.text-primary:focus {
+    color: #cc4b00 !important;
+}
+
+.btn-primary {
+    background-color: var(--construction-primary);
+    border-color: var(--construction-primary);
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+    background-color: #cc4b00 !important;
+    border-color: #cc4b00 !important;
+    color: white;
+}
+
+/* Service icon overrides */
+.fa-stack-2x {
+    color: var(--construction-primary);
+}
+
+/* Portfolio Hover Color */
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    background-color: rgba(255, 94, 0, 0.9);
+}
+
+/* Quote Form Specifics */
+#contact {
+    background-image: url("../assets/img/map-image.png");
+    background-color: #212529;
+}
+
+/* Timeline/About Us color tweaks */
+.timeline > li .timeline-image {
+    background-color: var(--construction-primary);
+}
+
+.team-member img {
+    border: 7px solid rgba(0, 0, 0, 0.1);
+}
