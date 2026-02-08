@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Semaka Construction Company</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Roboto+Slab:400,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .filter-controls {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .filter-btn {
+            background: none;
+            border: 2px solid var(--secondary-color);
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: all 0.3s;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            color: white;
+        }
+
+        .project-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s;
+        }
+
+        .project-card:hover .project-img {
+            transform: scale(1.1);
+        }
+
+        .project-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+            padding: 20px;
+            color: white;
+        }
+
+        .project-info h4 {
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+            color: var(--primary-color);
+        }
+
+        .project-info p {
+            font-size: 0.9rem;
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">SEMAKA <span>CONSTRUCTION</span></a>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu"><i class="fas fa-bars"></i></button>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="section bg-dark text-center" style="padding: 60px 0;">
+        <div class="container">
+            <h1>Our Projects</h1>
+            <p>A showcase of our diverse construction capabilities</p>
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <section class="section">
+        <div class="container">
+            <!-- Filter Controls -->
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="civil">Civil Works</button>
+            </div>
+
+            <!-- Project Grid -->
+            <div class="grid grid-3" id="project-grid">
+                <!-- Commercial Project -->
+                <div class="project-card" data-category="commercial">
+                    <img src="assets/HQ/GLE_4794.jpg" alt="Commercial" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h4>Philmed Towers</h4>
+                            <p>Commercial Complex</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Commercial Project -->
+                <div class="project-card" data-category="commercial">
+                    <img src="assets/HQ/GLE_4795.jpg" alt="Commercial" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h4>Philmed Towers</h4>
+                            <p>Commercial Complex</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Commercial Project -->
+                <div class="project-card" data-category="commercial">
+                    <img src="assets/HQ/GLE_4802.jpg" alt="Commercial" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h4>Philmed Towers</h4>
+                            <p>Commercial Complex</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card" data-category="commercial">
+                    <img src="assets/HQ/GLE_4797.jpg" alt="Commercial" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h4>Philmed Towers</h4>
+                            <p>Commercial Complex</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card" data-category="commercial">
+                    <img src="assets/HQ/GLE_4801.jpg" alt="Commercial" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h4>Philmed Towers</h4>
+                            <p>Commercial Complex</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card" data-category="commercial">
+                    <img src="assets/HQ/GLE_4807.jpg" alt="Commercial" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h4>Philmed Towers</h4>
+                            <p>Commercial Complex</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Residential Project -->
+                <div class="project-card" data-category="residential">
+                    <img src="assets/KITENGELA/GLE_3695.jpg" alt="Residential" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h4>Green Valley Estate</h4>
+                            <p>Residential Housing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="residential">
+                    <img src="assets/KITENGELA/GLE_3699.jpg" alt="Residential" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h4>Green Valley Estate</h4>
+                            <p>Residential Housing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="residential">
+                    <img src="assets/KITENGELA/GLE_3708.jpg" alt="Residential" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h4>Green Valley Estate</h4>
+                            <p>Residential Housing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="residential">
+                    <img src="assets/KITENGELA/GLE_3722.jpg" alt="Residential" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h4>Green Valley Estate</h4>
+                            <p>Residential Housing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="residential">
+                    <img src="assets/KITENGELA/GLE_3796.jpg" alt="Residential" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h4>Green Valley Estate</h4>
+                            <p>Residential Housing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="residential">
+                    <img src="assets/KITENGELA/GLE_3886.jpg" alt="Residential" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h4>Green Valley Estate</h4>
+                            <p>Residential Housing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Civil Project -->
+                <div class="project-card" data-category="civil">
+                    <img src="assets/images/portfolio/03-thumbnail.jpg" alt="Civil" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h4>Highway Bridge A104</h4>
+                            <p>Infrastructure</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Residential Project -->
+                <div class="project-card" data-category="residential">
+                    <img src="assets/KITENGELA/GLE_3865.jpg" alt="Residential" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h4>Luxury Villa</h4>
+                            <p>Private Residence</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Commercial Project -->
+                <div class="project-card" data-category="commercial">
+                    <img src="assets/images/portfolio/05-thumbnail.jpg" alt="Commercial" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h4>Tech Office Park</h4>
+                            <p>Office Space</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Civil Project -->
+                <div class="project-card" data-category="civil">
+                    <img src="assets/images/portfolio/06-thumbnail.jpg" alt="Civil" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-info">
+                            <h4>City Drainage System</h4>
+                            <p>Public Works</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-3 footer-grid">
+                <div>
+                    <h3>Semaka CC</h3>
+                    <p style="opacity: 0.8;">A professional construction partner content on delivering quality, safety,
+                        and value in every project.</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt" style="margin-top: 5px;"></i> 123 Construction Ave,
+                            Nairobi, Kenya</li>
+                        <li><i class="fas fa-phone"></i> (0723) 456-789</li>
+                        <li><i class="fas fa-envelope"></i> Email.semakaconstructionltd@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Semaka Construction Company. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Simple Gallery Filter Script
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Update active button
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const filterValue = btn.getAttribute('data-filter');
+
+                    projectCards.forEach(card => {
+                        if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

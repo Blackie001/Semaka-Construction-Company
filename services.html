@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Semaka Construction Company</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Roboto+Slab:400,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .service-detail-card {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .service-detail-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-img {
+            height: 200px;
+            background-color: #ddd;
+            /* Placeholder color */
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .service-content {
+            padding: 30px;
+        }
+
+        .service-content h3 {
+            color: var(--primary-dark);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">SEMAKA <span>CONSTRUCTION</span></a>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu"><i class="fas fa-bars"></i></button>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="services.html" class="nav-link">Services</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <div class="section bg-dark text-center" style="padding: 60px 0;">
+        <div class="container">
+            <h1>Our Services</h1>
+            <p>Tailored construction solutions for diverse requirements</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-2">
+                <!-- Residential -->
+                <div class="service-detail-card">
+                    <img src="assets/images/ress.jpg" alt="Residential Construction" class="service-img">
+                    <!-- Placeholder -->
+                    <div class="service-content">
+                        <h3>Residential Construction</h3>
+                        <p>We build dream homes. From single-family units to large apartment complexes, we ensure safe,
+                            comfortable, and aesthetically pleasing living spaces. Our residential services include
+                            custom home building, additions, and multi-unit developments.</p>
+                    </div>
+                </div>
+
+                <!-- Commercial -->
+                <div class="service-detail-card">
+                    <img src="assets/HQ/GLE_4848.jpg" alt="Commercial Construction" class="service-img">
+                    <!-- Placeholder -->
+                    <div class="service-content">
+                        <h3>Commercial Building</h3>
+                        <p>We deliver high-quality commercial spaces including offices, retail centers, warehouses, and
+                            factories. We focus on durability, functionality, and brand representation to support your
+                            business goals.</p>
+                    </div>
+                </div>
+
+                <!-- Renovations -->
+                <div class="service-detail-card">
+                    <img src="assets/images/reno.jpg" alt="Renovations" class="service-img">
+                    <!-- Placeholder -->
+                    <div class="service-content">
+                        <h3>Renovations & Remodeling</h3>
+                        <p>Transform your existing property. We specialize in interior and exterior renovations,
+                            structural modifications, and modernizing finishes for both residential and commercial
+                            properties.</p>
+                    </div>
+                </div>
+
+                <!-- Civil Works -->
+                <div class="service-detail-card">
+                    <img src="assets/images/civ.jpg" alt="Civil Works" class="service-img">
+                    <!-- Placeholder -->
+                    <div class="service-content">
+                        <h3>Civil & Infrastructure</h3>
+                        <p>Our expertise extends to public works. We handle road construction, drainage systems,
+                            bridges, and site preparation with strict adherence to engineering standards and safety
+                            regulations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features List -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="text-center">
+                <h2>Our Capabilities</h2>
+                <p style="margin-bottom: 40px;">We handle all aspects of the construction process.</p>
+            </div>
+            <div class="grid grid-3 text-center">
+                <div>
+                    <i class="fas fa-drafting-compass fa-2x"
+                        style="color: var(--secondary-color); margin-bottom: 15px;"></i>
+                    <h4>Project Planning</h4>
+                </div>
+                <div>
+                    <i class="fas fa-users-cog fa-2x" style="color: var(--secondary-color); margin-bottom: 15px;"></i>
+                    <h4>Site Management</h4>
+                </div>
+                <div>
+                    <i class="fas fa-pencil-ruler fa-2x"
+                        style="color: var(--secondary-color); margin-bottom: 15px;"></i>
+                    <h4>Structural Works</h4>
+                </div>
+                <div>
+                    <i class="fas fa-paint-roller fa-2x"
+                        style="color: var(--secondary-color); margin-bottom: 15px;"></i>
+                    <h4>Finishing</h4>
+                </div>
+                <div>
+                    <i class="fas fa-check-double fa-2x"
+                        style="color: var(--secondary-color); margin-bottom: 15px;"></i>
+                    <h4>Quality Control</h4>
+                </div>
+                <div>
+                    <i class="fas fa-handshake fa-2x" style="color: var(--secondary-color); margin-bottom: 15px;"></i>
+                    <h4>Consultation</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="grid grid-3 footer-grid">
+                <div>
+                    <h3>Semaka Construction Company</h3>
+                    <p style="opacity: 0.8;">A professional construction partner content on delivering quality, safety,
+                        and value in every project.</p>
+                </div>
+                <div>
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt" style="margin-top: 5px;"></i> 123 Construction Ave,
+                            Nairobi, Kenya</li>
+                        <li><i class="fas fa-phone"></i> (0723) 456-789</li>
+                        <li><i class="fas fa-envelope"></i> Email.semakaconstructionltd@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Semaka Construction Company. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
